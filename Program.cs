@@ -15,7 +15,7 @@ builder.Services.AddDbContext<Database>((s, o) =>
 {
     var tenant = s.GetService<ITenantGetter>()?.Tenant;
     // for migrations
-    var connectionString = tenant?.ConnectionString ?? "Data Source=client01.db";
+    var connectionString = tenant?.ConnectionString ?? "Data Source=default.db";
     // multi-tenant databases
     o.UseSqlite(connectionString);
 });
