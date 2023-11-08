@@ -1,12 +1,6 @@
 namespace EntityFrameworkCoreMultiTenancy;
 
 #nullable disable
-public class Tenant
-{
-    public string Name { get; set; }
-    public string ConnectionString { get; set; }
-}
-
 public class TenantConfigurationSection
 {
     public List<Tenant> Tenants { get; set; }
@@ -23,7 +17,7 @@ public class TenantService : ITenantGetter, ITenantSetter
     }
 }
 
-public interface ITenantGetter 
+public interface ITenantGetter
 {
     Tenant Tenant { get; }
 }

@@ -11,7 +11,7 @@ namespace EntityFrameworkCoreMultiTenancy.Migrations
 {
     [DbContext(typeof(Database))]
     [Migration("20220504182451_initial")]
-    partial class initial
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
