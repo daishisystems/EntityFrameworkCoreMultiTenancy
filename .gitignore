@@ -2,9 +2,5 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/bin/Debug/net7.0
-/obj/Debug/net7.0
-*.vsidx
-*.vsidx
-.vs/EntityFrameworkCoreMultiTenancy/v17/.suo
-.vs/EntityFrameworkCoreMultiTenancy/v17/.suo
+/bin
+/obj
