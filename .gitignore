@@ -6,3 +6,4 @@
 /obj/Debug/net7.0
 *.vsidx
 *.vsidx
+.vs/EntityFrameworkCoreMultiTenancy/v17/.suo
