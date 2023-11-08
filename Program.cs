@@ -32,5 +32,5 @@ app.MapGet("/", async (Database db) => await db
     // hide the tenant, which is response noise
     .Select(m => new { m.MemberId, m.Name, m.Address })
     .ToListAsync());
-
+    
 app.Run();
