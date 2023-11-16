@@ -28,6 +28,9 @@ public class MultiTenantServiceMiddleware : IMiddleware
             tenant = _config.Value
                 .Tenants
                 .FirstOrDefault(t => t.Name.Equals(key?.Trim(), StringComparison.OrdinalIgnoreCase)) ?? tenant;
+
+            // This is Q module middleware. The 'tenant' should be specified in the query issued from qCentral.
+            context.Response.Cookies.Append("tenant", tenant.Name);
         }
 
         _logger.LogInformation("Using the tenant {tenant}", tenant.Name);
