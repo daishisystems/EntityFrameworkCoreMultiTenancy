@@ -36,3 +36,4 @@ obj/project.assets.json
 obj/project.nuget.cache
 obj/project.assets.json
 obj/project.nuget.cache
+.vs/EntityFrameworkCoreMultiTenancy/v17/.suo
